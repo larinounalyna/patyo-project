@@ -1,0 +1,89 @@
+.project-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 0 0 12px;
+  box-shadow: 0 10px 22px rgba(19, 40, 73, 0.08);
+  border: 1px solid #dce5f2;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 30px rgba(19, 40, 73, 0.14);
+}
+
+.project-link {
+  display: block;
+  text-decoration: none;
+}
+
+.project-cover-wrap {
+  height: 106px;
+  border-radius: 14px 14px 8px 8px;
+  overflow: hidden;
+  background: linear-gradient(180deg, #c9dde3 0%, #dbe6ea 100%);
+}
+
+.project-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.86;
+}
+
+.project-status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 8px 12px 6px;
+  font-size: 11px;
+  color: #646468;
+}
+
+.project-status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #41b84d;
+}
+
+.project-card h2 {
+  margin: 0 12px 6px;
+  font-size: 24px;
+  line-height: 1.15;
+  color: #152743;
+}
+
+.project-card p {
+  margin: 0 12px;
+  font-size: 14px;
+  line-height: 1.45;
+  color: #5f738f;
+}
+
+.project-members {
+  display: flex;
+  align-items: center;
+  margin: 10px 12px 0;
+}
+
+.member-chip {
+  width: 22px;
+  height: 22px;
+  margin-left: -6px;
+  border-radius: 50%;
+  background: #ffd35a;
+  border: 2px solid #ffffff;
+  color: #3a2f0b;
+  font-size: 9px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.member-chip:first-child {
+  margin-left: 0;
+}

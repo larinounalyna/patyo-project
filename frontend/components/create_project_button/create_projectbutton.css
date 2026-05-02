@@ -1,0 +1,65 @@
+.button_ {
+  border: 0;
+  background: #2f6ce5;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 0.5rem;
+  padding: 10px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.button_:hover {
+  background: #1f54bd;
+  transform: translateY(-1px);
+}
+
+.card {
+  margin-top: 12px;
+  padding: 16px;
+  border-radius: 12px;
+  background: #ffffff;
+  border: 1px solid #dbe4f3;
+  box-shadow: 0 12px 28px rgba(18, 35, 67, 0.12);
+}
+
+.card h2 {
+  margin: 0 0 12px;
+  font-size: 18px;
+}
+
+.card form {
+  display: grid;
+  gap: 10px;
+}
+
+.card input,
+.card textarea,
+.card button[type="submit"] {
+  font: inherit;
+}
+
+.card input,
+.card textarea {
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.card textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.card button[type="submit"] {
+  border: 0;
+  border-radius: 8px;
+  background: #2b2b2b;
+  color: #fff;
+  padding: 10px 12px;
+  cursor: pointer;
+}

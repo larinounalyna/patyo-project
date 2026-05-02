@@ -1,0 +1,42 @@
+.ready-templates {
+  display: flex;
+  gap: 14px;
+  background: #f6f9ff;
+  border: 1px solid #dbe4f3;
+  padding: 16px;
+  border-radius: 12px;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.template-card-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: #e8f0ff;
+  border: 1px solid #d4e1f5;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.template-card-title {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: #183050;
+}
+
+.template-card-description {
+  margin-top: 0.35rem;
+  font-size: 13px;
+  line-height: 1.45;
+  color: #5c7290;
+}
+
+.ready-templates:hover {
+  background: #edf4ff;
+  border-color: #c8d8f0;
+  cursor: pointer;
+}

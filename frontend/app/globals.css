@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap");
+@import "tailwindcss";
+
+:root {
+  /* Palette */
+  --bg: #f1f3f7;
+  --surface: #ffffff;
+  --surface-2: #f7f8fb;
+  --border: #e4e7ef;
+  --border-2: #d2d6e0;
+
+  --text-1: #0f1624;
+  --text-2: #2d3748;
+  --text-3: #64748b;
+  --text-4: #94a3b8;
+
+  --accent: #2563eb;
+  --accent-dark: #1d4ed8;
+  --accent-pale: #eff6ff;
+
+  --green: #059669;
+  --green-pale: #ecfdf5;
+  --amber: #d97706;
+  --amber-pale: #fffbeb;
+  --red: #dc2626;
+  --red-pale: #fef2f2;
+  --violet: #7c3aed;
+  --violet-pale: #f5f3ff;
+
+  /* Layout */
+  --sidebar-w: 244px;
+  --app-gap: 10px;
+  --surface-r: 14px;
+
+  /* Shadows */
+  --shadow-sm:
+    0 1px 3px rgba(15, 23, 42, 0.06), 0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow-md:
+    0 4px 12px rgba(15, 23, 42, 0.08), 0 1px 3px rgba(15, 23, 42, 0.05);
+  --shadow-lg:
+    0 12px 32px rgba(15, 23, 42, 0.12), 0 3px 8px rgba(15, 23, 42, 0.06);
+
+  /* Typography */
+  --font: "Inter", system-ui, sans-serif;
+  --mono: "DM Mono", monospace;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text-1);
+  font-family: var(--font);
+  font-size: 14px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ── App shell ───────────────────────────────── */
+.app-shell {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: var(--sidebar-w) minmax(0, 1fr);
+  align-items: start;
+  gap: var(--app-gap);
+  padding: 10px;
+}
+
+.app-content {
+  min-width: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 6px 0 24px;
+}
+
+/* ── Utility ─────────────────────────────────── */
+.page-header-block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Shared button styles */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  height: 36px;
+  padding: 0 14px;
+  border: none;
+  border-radius: 10px;
+  font: 600 13px/1 var(--font);
+  cursor: pointer;
+  transition:
+    background 0.15s,
+    transform 0.1s,
+    box-shadow 0.15s;
+  white-space: nowrap;
+}
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 1px 3px rgba(37, 99, 235, 0.3);
+}
+.btn-primary:hover {
+  background: var(--accent-dark);
+}
+
+.btn-ghost {
+  background: var(--surface);
+  color: var(--text-2);
+  border: 1px solid var(--border);
+}
+.btn-ghost:hover {
+  background: var(--surface-2);
+}
+
+/* ── Responsive ──────────────────────────────── */
+@media (max-width: 1024px) {
+  :root {
+    --sidebar-w: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-shell {
+    grid-template-columns: 1fr;
+    padding: 6px;
+  }
+}

@@ -1,0 +1,33 @@
+.section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.section-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(122, 151, 193, 0.12),
+    rgba(122, 151, 193, 0.48),
+    rgba(122, 151, 193, 0.12)
+  );
+  opacity: 1;
+}
+
+.section p {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #5a6f90;
+  background: #eef4ff;
+  border: 1px solid #d4e0f2;
+  border-radius: 999px;
+  padding: 4px 10px;
+  white-space: nowrap;
+}

@@ -1,0 +1,10 @@
+from .auth import router as auth
+from .users import router as users
+from .companies import router as companies
+from .roles import router as roles
+from .user_company import router as user_company
+from .projects import router as projects
+from .tasks import router as tasks
+from .reports import router as reports
+from .resources import router as resources
+from .skills import router as skills

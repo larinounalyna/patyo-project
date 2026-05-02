@@ -1,0 +1,173 @@
+.profile-right-side {
+  width: 100%;
+}
+
+.profile-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.profile-header-block {
+  margin-left: 0;
+}
+
+.profile-surface {
+  background: #f8fbff;
+  border: 1px solid #dce6f4;
+  border-radius: 14px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.profile-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.profile-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.profile-user-image {
+  width: 62px;
+  height: 62px;
+  border-radius: 999px;
+  object-fit: cover;
+  border: 1px solid #d7dde8;
+}
+
+.profile-user h2 {
+  margin: 0;
+  font-size: 26px;
+  line-height: 1;
+  color: #1e293b;
+}
+
+.profile-user p {
+  margin: 6px 0 0;
+  font-size: 15px;
+  color: #6b7280;
+}
+
+.profile-edit-btn {
+  border: 0;
+  height: 34px;
+  min-width: 68px;
+  border-radius: 8px;
+  background: #2f6ce5;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.profile-edit-btn:hover {
+  background: #1f54bd;
+}
+
+.profile-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px 18px;
+}
+
+.field-block {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field-block span {
+  font-size: 13px;
+  color: #374151;
+  font-weight: 600;
+}
+
+.field-block input,
+.field-block select {
+  border: 1px solid #e4e8ef;
+  background: #f8fafc;
+  border-radius: 9px;
+  height: 38px;
+  padding: 0 12px;
+  font-size: 13px;
+  color: #334155;
+}
+
+.field-block input:focus,
+.field-block select:focus {
+  outline: 2px solid #cde0ff;
+  border-color: #9fc0f2;
+}
+
+.email-section {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.email-section h3 {
+  margin: 0;
+  font-size: 28px;
+  font-size: clamp(20px, 2vw, 30px);
+  color: #1e293b;
+}
+
+.email-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.email-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  background: #dbeafe;
+  color: #2c67d0;
+  display: grid;
+  place-items: center;
+  font-size: 14px;
+}
+
+.email-item p {
+  margin: 0;
+  color: #1f2937;
+  font-size: 14px;
+}
+
+.email-item small {
+  color: #6b7280;
+  font-size: 12px;
+}
+
+.add-email-btn {
+  width: fit-content;
+  border: 0;
+  border-radius: 8px;
+  height: 32px;
+  padding: 0 16px;
+  background: #e8efff;
+  color: #3668c9;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .profile-header-block {
+    margin-left: 0;
+  }
+
+  .profile-form-grid {
+    grid-template-columns: 1fr;
+  }
+}
